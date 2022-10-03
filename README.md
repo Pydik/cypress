@@ -7,7 +7,18 @@ for this site: https://telnyx.com/
 For this were used java script and cypress + cucumber , VS code development environment
 
 ## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+Installing Cypress : 
+ npm install - in your terminal 
+ 
+ or 
+ 
+ Install Cypress via npm:
+ cd /your/project/path
+ npm install cypress --save-dev
+ 
+ Next step:
+ npx cypress open , then click e2e and choose your file test
+ How install cypress site: https://docs.cypress.io
 
 ## Usage
 Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
