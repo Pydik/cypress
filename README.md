@@ -19,9 +19,10 @@ Installing Cypress :
  Next step:
  npx cypress open , then click e2e and choose your file test
  How install cypress site: https://docs.cypress.io
+ How install cucumber: i used this video: https://www.youtube.com/watch?v=4KPBMXUSWJc&t=727s&ab_channel=JoanMedia
 
 ## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+by Pyfik
 
 ## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+Read to use
