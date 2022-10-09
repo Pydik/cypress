@@ -1,24 +1,25 @@
-const { defineConfig } = require('cypress')
+import { defineConfig } from 'cypress'
 
-module.exports = defineConfig({
-  chromeWebSecurity: false,
-  testFiles: '**/*.feature',
-  defaultCommandTimeout: 30000,
-  viewportWidth: 1920,
-  viewportHeight: 1080,
-  responseTimeout: 40000,
+export default defineConfig({
+  video: true,
+  defaultCommandTimeout: 5000,
+  execTimeout: 5000,
+  taskTimeout: 5000,
+  pageLoadTimeout: 30000,
+  requestTimeout: 5000,
+  responseTimeout: 30000,
+  screenshotsFolder: 'reports/screenshots',
+  videosFolder: 'reports/videos',
   env: {
-    // superUser: 'mailtest727@gmail.com',
-    // employeeUser: 'jp@mail.com',
-    // secondSuperUser: 'mailtest591@gmail.com',
-    // vendorUser: 'vendorautotest@gmail.com',
-    // hmUser: 'hiringmanagerauto@gmail.com',
-    // interviewUser: 'interviewerautotest@mailinator.com',
-    // password: 'qwerty'
+    allureResultsPath: '../allure-results',
   },
-  
   e2e: {
-    setupNodeEvents(on, config) {},
-    baseUrl: 'https://telnyx.com',
+    // We've imported your old cypress plugins here.
+    // You may want to clean this up later by importing these.
+    setupNodeEvents(on, config) {
+      return require('cypress/plugins/index.js')(on, config)
+    },
+    baseUrl: 'http://automationpractice.com/index.php',
+    specPattern: 'cypress/e2e/tests/**/*.test.ts',
   },
 })
